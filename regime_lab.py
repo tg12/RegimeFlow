@@ -11,8 +11,16 @@ Key innovations:
     3. Epistemic uncertainty quantification for risk-aware predictions
     4. Optuna-based Bayesian hyperparameter optimization
 
-Author: Research Implementation
+Author: James Sawyer (https://labs.jamessawyer.co.uk/)
 License: MIT
+
+Disclaimer:
+    This software is provided "as is" without any warranties, express or implied,
+    including but not limited to fitness for a particular purpose, accuracy of
+    outputs, or suitability for production deployment. Use is at your own risk.
+    No guarantee is made that models, forecasts, or regimes are correct, complete,
+    or appropriate for trading, risk, or operational decisions. Users remain
+    solely responsible for validation, compliance, and any resulting outcomes.
 """
 
 # =============================================================================
