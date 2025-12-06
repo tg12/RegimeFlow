@@ -104,14 +104,27 @@ Options:
 - **Bootstrap**: `RegimeModelDiagnostics.bootstrap_validate` returns accuracy mean/std and confidence intervals over resamples.
 - **Calibration**: `RegimeModelDiagnostics.compute_calibration` yields ECE/MCE and bin data for reliability diagrams.
 
-### Result Figures (all under `results/`)
-- `results/optimization_history.png`: Optuna objective over trials; shows convergence speed and variance, useful for spotting overfitting or underexploration.
-- `results/hyperparameter_importance.png`: Optuna importance analysis; highlights which hyperparameters drive validation performance.
-- `results/confusion_matrix.png`: Normalized confusion matrix on validation or holdout; reveals class imbalance effects and misclassification structure.
-- `results/regime_dashboard.png`: Composite panel with optimization traces, calibration, and per-regime metrics for a single trained model.
-- `results/lng_forecast.png`: LNG-specific forecast with predicted regimes overlaid and confidence bands; illustrates temporal alignment of regime changes to signal levels.
-- `results/normalized_forecast.png`: Same as above on normalized scale to emphasize relative dynamics and reduce scale bias.
-- `results/regime_duration_table.png`: Table of regime durations and transition counts; helps judge stability and stickiness of inferred regimes.
+### Result Figures (rendered on GitHub)
+![Optimization history](results/optimization_history.png)
+- Optuna objective across trials; shows convergence speed and variance.
+
+![Hyperparameter importance](results/hyperparameter_importance.png)
+- Relative importance of each hyperparameter for validation performance.
+
+![Confusion matrix](results/confusion_matrix.png)
+- Normalized confusion matrix on validation or holdout to reveal misclassification structure.
+
+![Regime dashboard](results/regime_dashboard.png)
+- Composite view with optimization traces, calibration, and per-regime metrics for a trained model.
+
+![LNG forecast](results/lng_forecast.png)
+- Forecast with predicted regimes and confidence bands aligned to raw signal levels.
+
+![Normalized forecast](results/normalized_forecast.png)
+- Same forecast on normalized scale to emphasize relative dynamics and reduce scale bias.
+
+![Regime duration table](results/regime_duration_table.png)
+- Regime durations and transition counts to assess stability and stickiness.
 
 ## 6. Ablations to Sustain
 - Number of dilation scales: gains in change-point recall until receptive field saturates; excessive scales can hurt calibration.
