@@ -1,0 +1,17 @@
+# RegimeFlow Dependencies
+# Core ML Framework
+torch>=2.0.0
+numpy>=1.21.0
+
+# Hyperparameter Optimization
+optuna>=3.0.0
+
+# Visualization (optional, for dashboard generation)
+seaborn>=0.12.0
+matplotlib>=3.5.0
+
+# Metrics and Utilities
+scikit-learn>=1.0.0
+
+# Logging (optional, for colored output)
+colorlog>=6.0.0

@@ -26,9 +26,65 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# =============================================================================
+# Machine Learning / Deep Learning
+# =============================================================================
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.onnx
+*.pb
+checkpoints/
+saved_models/
+weights/
+models/
+
+# Optuna databases and studies
+*.db
+*.sqlite
+*.sqlite3
+optuna_studies/
+optuna_*.db
+
+# TensorBoard logs
+runs/
+logs/
+tensorboard/
+lightning_logs/
+
+# Experiment tracking
+mlruns/
+wandb/
+.neptune/
+.comet/
+
+# Data files (often too large for git)
+*.csv
+*.parquet
+*.feather
+*.arrow
+*.npy
+*.npz
+*.pkl
+*.pickle
+data/
+datasets/
+
+# Visualization outputs
+figures/
+plots/
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# =============================================================================
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+# =============================================================================
 *.manifest
 *.spec
 
@@ -205,3 +261,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Agents
+AGENTS.md
+gas_total_eu.py
+eu_lng_raw.json
